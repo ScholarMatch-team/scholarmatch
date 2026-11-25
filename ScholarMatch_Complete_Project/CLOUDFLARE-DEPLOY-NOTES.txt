@@ -1,0 +1,16 @@
+CLOUDFLARE DEPLOY NOTES
+
+This ZIP is a complete project. Extract its contents directly into C:\Users\HP\Downloads\ScholarMatch_FullStack_FIXED (or another project folder). Do not extract it into an extra nested ScholarMatch_Complete_Project folder.
+
+Required layout after extraction:
+- wrangler.toml
+- worker.js
+- public\index.html
+- public\app.js
+- public\styles.css
+- package.json
+
+Open Command Prompt in the folder containing wrangler.toml, then run:
+  npx.cmd wrangler deploy
+
+The API proxy in worker.js uses https://scholarmatchfixed.onrender.com. The Express backend on Render must remain deployed and running for account creation and login.

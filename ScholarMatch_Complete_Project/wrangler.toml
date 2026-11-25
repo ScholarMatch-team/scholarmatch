@@ -1,0 +1,12 @@
+name = "scholarmatch"
+main = "worker.js"
+compatibility_date = "2026-11-25"
+workers_dev = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[vars]
+API_ORIGIN = "https://scholarmatchfixed.onrender.com"
